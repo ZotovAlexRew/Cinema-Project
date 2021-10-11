@@ -164,9 +164,12 @@ body {
 }
 .select-cinema {
   width: 470px;
+  background-color: #621402;
+  opacity: 0.75;
 }
 .select-time {
-  background: rgba(255, 255, 255, 0.15);
+  background: #621402;
+  opacity: 0.75;
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 5px;
   cursor: pointer;
@@ -174,9 +177,6 @@ body {
   padding: 18px;
   min-width: 108px;
   margin-top: 15px;
-}
-.option {
-  color: black;
 }
 .scheme {
   margin-bottom: 40px;
@@ -275,16 +275,14 @@ body {
     order: 2;
   }
   .session-cinema {
+    margin-top: 40px;
     order: 3;
   }
   .menu-item {
     margin-right: 20px;
   }
 }
-@media (max-width: 760px) {
-  .container {
-    min-width: 560px;
-  }
+@media (max-width: 768px) {
   .menu {
     position: absolute;
     left: 0;
@@ -328,5 +326,47 @@ body {
     margin-right: auto;
     margin-left: 0;
     margin-top: 40px;
+  }
+}
+@media (max-width: 590px) {
+  .container {
+    max-width: 390px;
+  }
+  .film {
+    flex-wrap: wrap;
+  }
+  .film-trailer {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    margin: auto;
+  }
+  .session {
+    display: block;
+  }
+  .session-date {
+    margin-bottom: 20px;
+  }
+  .session-time {
+    padding-top: 40px;
+    margin-left: 0px;
+  }
+  .legend {
+    flex-wrap: wrap;
+  }
+  .legend-free {
+    flex-basis: 70%;
+    margin-bottom: 20px;
+  }
+  .legend-active {
+    flex-basis: 70%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .price {
+    display: block;
+  }
+  .price-tag {
+    flex-basis: 70%;
+    margin-bottom: 40px;
   }
 }
